@@ -1,0 +1,28 @@
+.landing-block {
+  padding: 16px 24px;
+
+  &__title {
+    display: inline-block;
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 27px;
+
+    @media (min-width: 360px) and (max-width: 1200px) {
+      width: initial;
+      font-size: 30px;
+      line-height: 33px;
+    }
+
+    @media (min-width: 1200px) {
+      width: initial;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  &__text {
+    word-break: break-word;
+  }
+}

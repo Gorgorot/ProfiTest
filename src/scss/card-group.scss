@@ -1,0 +1,35 @@
+.card-group {
+  display: flex;
+  flex-direction: column;
+
+  .card {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+
+    &-body {
+      .card-text {
+        color: #575757;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .card-title {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+
+        @media (min-width: 1200px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 430px) {
+    flex-direction: row;
+  }
+}

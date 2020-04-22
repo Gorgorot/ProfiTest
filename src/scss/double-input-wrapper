@@ -1,0 +1,35 @@
+.inputs-wrapper {
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    .text-input {
+      max-width: 400px;
+      width: 100%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @media (min-width: 360px) {
+        margin-left: 24px;
+      }
+    }
+
+    @media (min-width: 360px) {
+      flex-direction: row;
+    }
+  }
+
+
+  &__help {
+    width: 100%;
+    color: #575757;
+    font-size: 14px;
+    line-height: 20px;
+    @media (min-width: 360px) {
+      width: 353px;
+    }
+  }
+}
